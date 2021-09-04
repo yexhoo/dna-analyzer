@@ -1,0 +1,11 @@
+module.exports.BAD_SEQUENCE_LIMIT = 1;
+module.exports.BAD_SEQUENCE_NUMBER = 4;
+module.exports.ALLOWED_CHARS = ['A', 'T', 'C', 'G'];
+module.exports.PORT = 3000;
+module.exports.HAS_MUTATION = 200;
+module.exports.BAD_REQUEST = 400;
+module.exports.HAS_NO_MUTATION = 403;
+module.exports.NEW_LINE = '\n::::: ';
+module.exports.HAS_MUTATION_MSG = `${this.NEW_LINE}The dna received has mutation !!!`;
+module.exports.HAS_NO_MUTATION_MSG = `${this.NEW_LINE}The dna received has no mutation !!!`;
+module.exports.RUNNING_SERVER = `${this.NEW_LINE}DNA analyzer is running on port ${this.PORT}`;

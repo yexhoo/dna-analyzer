@@ -1,0 +1,47 @@
+{
+  "extends": "airbnb-base",
+  "plugins": ["jest"],
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "func-names": ["error", "never"],
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["__base", "_bar"], "allowAfterThis": true }
+    ],
+    "indent": [2, 2, { "SwitchCase": 1 }],
+    "default-case": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "LabeledStatement",
+        "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+      },
+      {
+        "selector": "WithStatement",
+        "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+      }
+    ],
+    "no-lonely-if": "off",
+    "no-inner-declarations": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": ["error", { "functions": false, "classes": true }]
+  },
+  "globals": {
+    "__base": true
+  }
+}
